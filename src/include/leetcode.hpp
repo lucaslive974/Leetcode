@@ -18,6 +18,7 @@ class Solution {
     ListNode *addTwoNumber(ListNode *l1, ListNode *l2);
     bool isPalindrome(int x);
     bool hasCycle(ListNode *head);
+    std::vector<int> topKFrequent(std::vector<int>& nums, int k);
 };
 
 #endif // !LEETCODEH
