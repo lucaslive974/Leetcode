@@ -1,0 +1,17 @@
+
+#include <vector>
+
+using namespace std;
+
+class array1 {
+  public:
+    vector<int> getConcatenation(vector<int> &nums);
+    vector<int> shuffle(vector<int> &nums, int n);
+    int findMaxConsecutivesOnes(vector<int> &nums);
+    vector<int> findErrorNums(vector<int> &nums);
+};
+
+class array2 {
+  public:
+    vector<int> findDisappeardNumbers(vector<int> &nums);
+};

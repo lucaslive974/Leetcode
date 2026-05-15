@@ -3,6 +3,8 @@
 
 #include <vector>
 
+using namespace std;
+
 struct ListNode {
     int val;
     ListNode *next;
@@ -14,11 +16,14 @@ struct ListNode {
 //
 class Solution {
   public:
-    std::vector<int> twoSum(std::vector<int> &nums, int target);
+    vector<int> twoSum(vector<int> &nums, int target);
     ListNode *addTwoNumber(ListNode *l1, ListNode *l2);
     bool isPalindrome(int x);
     bool hasCycle(ListNode *head);
-    std::vector<int> topKFrequent(std::vector<int>& nums, int k);
+    vector<int> topKFrequent(vector<int> &nums, int k);
+    int minimumEffort(vector<vector<int>> &tasks);
+    int minMoves(vector<int> &nums, int limit);
+    int findMin(vector<int> &nums);
 };
 
 #endif // !LEETCODEH

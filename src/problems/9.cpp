@@ -1,4 +1,5 @@
 #include "leetcode.hpp"
+#include <string>
 
 bool Solution::isPalindrome(int x) {
     std::string s1 = std::to_string(x);
