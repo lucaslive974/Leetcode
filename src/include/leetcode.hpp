@@ -24,6 +24,7 @@ class Solution {
     int minimumEffort(vector<vector<int>> &tasks);
     int minMoves(vector<int> &nums, int limit);
     int findMin(vector<int> &nums);
+    bool canReach(vector<int> &arr, int start);
 };
 
 #endif // !LEETCODEH

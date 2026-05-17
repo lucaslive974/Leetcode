@@ -1,4 +1,5 @@
 
+#include <string>
 #include <vector>
 
 using namespace std;
@@ -14,4 +15,9 @@ class array1 {
 class array2 {
   public:
     vector<int> findDisappeardNumbers(vector<int> &nums);
+};
+
+class stack1 {
+  public:
+    int evalRPN(vector<string> &tokens);
 };
