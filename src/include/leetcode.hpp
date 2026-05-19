@@ -25,6 +25,7 @@ class Solution {
     int minMoves(vector<int> &nums, int limit);
     int findMin(vector<int> &nums);
     bool canReach(vector<int> &arr, int start);
+    int minJumps(vector<int> &arr);
 };
 
 #endif // !LEETCODEH
