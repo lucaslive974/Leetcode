@@ -25,6 +25,7 @@ class Solution {
     int minMoves(vector<int> &nums, int limit);
     int findMin(vector<int> &nums);
     bool canReach(vector<int> &arr, int start);
+    int getCommon(vector<int> &nums1, vector<int> &nums2);
 };
 
 #endif // !LEETCODEH
