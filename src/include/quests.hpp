@@ -22,3 +22,8 @@ class stack1 {
     int evalRPN(vector<string> &tokens);
     vector<int> exclusiveTime(int n, vector<string> &logs);
 };
+
+class monotonic1 {
+  public:
+    vector<int> finalPrices(vector<int> &prices);
+};
