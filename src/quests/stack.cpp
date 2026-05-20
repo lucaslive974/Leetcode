@@ -1,5 +1,4 @@
 #include "quests.hpp"
-#include <cctype>
 #include <functional>
 #include <stack>
 #include <unordered_map>
@@ -29,4 +28,36 @@ int stack1::evalRPN(vector<string> &tokens) {
     }
 
     return evaluation.top();
+};
+
+vector<int> stack1::exclusiveTime(int n, vector<string> &logs) {
+    vector<int> ans(n, 0);
+
+    stack<int> callstack;
+    int last_timestamp = 0;
+
+    for (auto &log : logs) {
+        auto parts =
+            log | views::split(':') | views::transform([](auto &&rng) { return string_view{rng.begin(), rng.end()}; });
+
+        auto it = parts.begin();
+        int id = stoi(string(*it++));
+        string_view op = *it++;
+        int timestamp = stoi(string(*it));
+
+        if (!empty(callstack))
+            ans[callstack.top()] += timestamp - last_timestamp;
+
+        if (op == "start")
+            callstack.push(id);
+        else {
+            ans[callstack.top()]++;
+            callstack.pop();
+            timestamp++;
+        }
+
+        last_timestamp = timestamp;
+    }
+
+    return ans;
 };

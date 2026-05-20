@@ -20,4 +20,5 @@ class array2 {
 class stack1 {
   public:
     int evalRPN(vector<string> &tokens);
+    vector<int> exclusiveTime(int n, vector<string> &logs);
 };

@@ -26,6 +26,8 @@ class Solution {
     int findMin(vector<int> &nums);
     bool canReach(vector<int> &arr, int start);
     int minJumps(vector<int> &arr);
+    int getCommon(vector<int> &nums1, vector<int> &nums2);
+    vector<int> findThePrefixCommonArray(vector<int> &A, vector<int> &B);
 };
 
 #endif // !LEETCODEH
