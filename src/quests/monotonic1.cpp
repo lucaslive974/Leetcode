@@ -1,5 +1,6 @@
 #include "quests.hpp"
 
+#include <ranges>
 #include <stack>
 
 vector<int> monotonic1::finalPrices(vector<int> &prices) {
@@ -23,3 +24,21 @@ vector<int> monotonic1::finalPrices(vector<int> &prices) {
 
     return ans;
 }
+
+vector<int> monotonic1::dailyTemperatures(vector<int> &temperatures) {
+    stack<int> monotonic_dec_stack;
+    vector<int> ans(size(temperatures), 0);
+
+    monotonic_dec_stack.push(0);
+    for (auto [i, temperature] : temperatures | views::enumerate | views::drop(1)) {
+        while (!empty(monotonic_dec_stack) && temperature > temperatures[monotonic_dec_stack.top()]) {
+            int idx = monotonic_dec_stack.top();
+            monotonic_dec_stack.pop();
+            ans[idx] = i - idx;
+        }
+
+        monotonic_dec_stack.push(i);
+    }
+
+    return ans;
+};

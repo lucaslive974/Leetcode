@@ -1,12 +1,12 @@
 #include "leetcode.hpp"
 
 int main(int argc, char **argv) {
-    std::vector<int> nums{1, 2, 2, 1};
-    int limit = 2;
+    std::vector<int> nums1{1, 10, 100};
+    std::vector<int> nums2{1000};
 
     Solution solution;
 
-    int res = solution.minMoves(nums, limit);
+    int res = solution.longestCommonPrefix(nums1, nums2);
 
     return 0;
 }
