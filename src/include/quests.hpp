@@ -27,4 +27,5 @@ class monotonic1 {
   public:
     vector<int> finalPrices(vector<int> &prices);
     vector<int> dailyTemperatures(vector<int> &temperatures);
+    int largestRectangleArea(vector<int> &heights);
 };
