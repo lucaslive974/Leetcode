@@ -29,6 +29,7 @@ class Solution {
     int getCommon(vector<int> &nums1, vector<int> &nums2);
     vector<int> findThePrefixCommonArray(vector<int> &A, vector<int> &B);
     int longestCommonPrefix(vector<int> &arr1, vector<int> &arr2);
+    int search(vector<int> &nums, int target);
 };
 
 #endif // !LEETCODEH
