@@ -12,7 +12,6 @@ struct ListNode {
     ListNode(int x) : val(x), next(nullptr) {};
     ListNode(int x, ListNode *next) : val(x), next(next) {};
 };
-// 1
 //
 class Solution {
   public:
@@ -30,6 +29,7 @@ class Solution {
     vector<int> findThePrefixCommonArray(vector<int> &A, vector<int> &B);
     int longestCommonPrefix(vector<int> &arr1, vector<int> &arr2);
     int search(vector<int> &nums, int target);
+    bool check(vector<int> &nums);
 };
 
 #endif // !LEETCODEH
