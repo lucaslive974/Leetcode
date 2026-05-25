@@ -30,6 +30,7 @@ class Solution {
     int longestCommonPrefix(vector<int> &arr1, vector<int> &arr2);
     int search(vector<int> &nums, int target);
     bool check(vector<int> &nums);
+    int maxJumps(vector<int> &arr, int d);
 };
 
 #endif // !LEETCODEH
