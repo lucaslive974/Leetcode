@@ -1,6 +1,7 @@
 #ifndef LEETCODEH
 #define LEETCODEH
 
+#include <string>
 #include <vector>
 
 using namespace std;
@@ -24,6 +25,7 @@ class Solution {
     int minMoves(vector<int> &nums, int limit);
     int findMin(vector<int> &nums);
     bool canReach(vector<int> &arr, int start);
+    bool canReach(string s, int minJump, int maxJump);
     int minJumps(vector<int> &arr);
     int getCommon(vector<int> &nums1, vector<int> &nums2);
     vector<int> findThePrefixCommonArray(vector<int> &A, vector<int> &B);
@@ -31,6 +33,7 @@ class Solution {
     int search(vector<int> &nums, int target);
     bool check(vector<int> &nums);
     int maxJumps(vector<int> &arr, int d);
+    int numberOfSpecialChars(string word);
 };
 
 #endif // !LEETCODEH
