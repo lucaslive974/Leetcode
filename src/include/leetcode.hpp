@@ -34,6 +34,7 @@ class Solution {
     bool check(vector<int> &nums);
     int maxJumps(vector<int> &arr, int d);
     int numberOfSpecialChars(string word);
+    int numberOfSpecialCharsII(string word);
 };
 
 #endif // !LEETCODEH
